@@ -10,4 +10,11 @@ class Todo{
   String get content => _content;
 
   int get id => _id;
+
+  Map<String, dynamic> toMap() {
+    return {
+      'id': _id,
+      'content': _content,
+    };
+  }
 }
